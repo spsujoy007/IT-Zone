@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Smooch+Sans:wght@400;500;600;700&display=swap');
 :root {
     --primary: #F15B28;
     --off-primary: #cc3706;
@@ -22,8 +22,14 @@ body{
 }
 /* color plate end ****************/
 
+.poppin{
+    font-family: 'Poppins', sans-serif;
+}
+
 .container{
     max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button{
