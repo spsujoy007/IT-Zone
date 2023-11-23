@@ -1,0 +1,48 @@
+ @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500;600;700&display=swap');
+:root {
+    --primary: #F15B28;
+    --off-primary: #cc3706;
+    --secondary: #272360;
+    --neutral: #ffe7df;
+}
+
+body{
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+/* color plate start **************/
+.primary{
+    color: var(--primary);
+}
+.secondary{
+    color: var(--secondary);
+}
+.neutral{
+    color: var(--neutral);
+}
+/* color plate end ****************/
+
+.container{
+    max-width: 1170px;
+}
+
+.button{
+    background-color: var(--primary);
+    color:white;
+    padding: 5px 30px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+.button:hover{
+    background-color: var(--secondary);
+    color:white;
+    border-radius: 50px;
+}
+
+li{
+    transition: 0.1s;
+}
+li:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
