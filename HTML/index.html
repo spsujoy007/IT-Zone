@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ItZone</title>
+    <title>IT-Zone</title>
+    <link rel="icon" type="image/x-icon" href="/assets/main-logo.png">
     <link rel="stylesheet" href="../CSS/style.css">
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,15 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Smooch+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
         <!-- header start ------->
-        <header class="container py-3 flex justify-between items-center">
-            <img class="w-[200px]" id="logo" src="" alt="">
+        <header class="container py-3 flex justify-between items-center smoch-font">
+            <img class="md:w-[200px] w-[150px] logo" src="" alt="">
 
-            <div class="flex gap-x-14 items-center">
-                <ul class="flex gap-x-8 secondary text-2xl font-semibold">
+            <div class="gap-x-14 items-center md:flex hidden">
+                <ul class="flex gap-x-8 secondary text-2xl font-semibold ">
                     <li>Home</li>
                     <li>About</li>
                     <li>Courses</li>
@@ -32,17 +32,23 @@
         <!-- header end   ------->
 
         <main>
-           <section class="headerSection container flex items-center h-[80vh]">
-                <div>
-                    <p class="secondary text-2xl pl-1 font-semibold poppin">Hello my name is</p>
-                    <h1 class="text-[70px] -mt-3  poppin font-bold secondary">Razanur Ullah  (SUN)</h1>
-                    <p class="w-[600px] pl-1 poppin text-lg">A computer trainer and our passionate ICT teacher collaborate, blending theory and practice for an immersive learning experience. Staying ahead in tech trends, they foster proficiency, ethical values, and adaptability in students, creating a dynamic, tech-positive environment.</p>
-                    <div class="mt-5 flex items-center gap-3 pl-1">
-                        <button class="py-2 text-sm px-5 bg-yellow-100 hover:bg-yellow-200 cursor-text rounded-full poppin text-yellow-500 flex gap-x-2 items-center text-yellow-700"><i class="fa-solid fa-tower-broadcast"></i>Unlimited Resourses</button>
-                        <button class="py-2 text-sm px-5 bg-green-100 hover:bg-green-200 cursor-text rounded-full poppin text-green-500 flex gap-x-2 items-center text-green-700"><i class="fa-solid fa-tower-broadcast"></i>120+ Live Classes</button>
-                        <button class="py-2 text-sm px-5 bg-sky-100 hover:bg-sky-200 cursor-text rounded-full poppin text-sky-500 flex gap-x-2 items-center text-sky-700"><i class="fa-solid fa-book"></i>50+ Lectures</button>
+           <section class="headerSection container flex items-center h-[80vh] md:mt-0 mt-10">
+                <div class="flex md:flex-row flex-col-reverse items-center">
+                    <div class="p-3 ">
+                        <p class="secondary md:text-2xl text-lg pl-1 font-semibold poppin">Hello my name is</p>
+                        <h1 class="md:text-[70px] text-4xl mt-4 poppin font-bold secondary">Razanur Ullah</h1>
+                        <p class="md:w-[600px] pl-1 poppin text-lg mt-4">A computer trainer and our passionate ICT teacher collaborate, blending theory and practice for an immersive learning experience. Staying ahead in tech trends, they foster proficiency, ethical values, and adaptability in students, creating a dynamic, tech-positive environment.</p>
+                        <div class="mt-5 flex flex-wrap items-center gap-3 pl-1">
+                            <button class="py-2 min-w-full md:min-w-[80px] md:text-sm text-xs px-5 bg-sky-100 hover:bg-sky-200 cursor-text rounded-full poppin text-sky-500 flex gap-x-2 items-center text-sky-700"><i class="fa-solid fa-tower-broadcast"></i>Unlimited Resourses</button>
+                            <button class="py-2 min-w-full md:min-w-[80px] md:text-sm text-xs px-5 bg-green-100 hover:bg-green-200 cursor-text rounded-full poppin text-green-500 flex gap-x-2 items-center text-green-700"><i class="fa-solid fa-chalkboard-user"></i>120+ Live Classes</button>
+                            <button class="py-2 min-w-full md:min-w-[80px] md:text-sm text-xs px-5 bg-yellow-100 hover:bg-yellow-200 cursor-text rounded-full poppin text-yellow-500 flex gap-x-2 items-center text-yellow-700"><i class="fa-solid fa-book"></i>50+ Lectures</button>
+                        </div>
+                        <!-- <button class="button mt-5 text-2xl poppin py-2 px-10">More about IT-Zone</button> -->
                     </div>
-                    <!-- <button class="button mt-5 text-2xl poppin py-2 px-10">More about IT-Zone</button> -->
+
+                    <div class="md:w-[50%] flex justify-center ">
+                        <img class="w-[60%]" src="../assets/headerimg.jpg" alt="">
+                    </div>
                 </div>
            </section> 
 
