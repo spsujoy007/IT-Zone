@@ -3,7 +3,9 @@
     --primary: #F15B28;
     --off-primary: #ffb59d;
     --secondary: #272360;
-    --neutral: #ffe7df;
+    /* --neutral: #ffe7df; */
+    --neutral: beige;
+    --off-black: #3d3d3d;
 }
 
 body{
@@ -14,11 +16,30 @@ body{
 .primary{
     color: var(--primary);
 }
+.border_primary{
+    border: 2px solid var(--primary);
+}
+.offblack{
+    color: var(--off-black);
+}
+.bg-primary{
+    background-color: var(--primary);
+}
+.bg-neutral{
+    background-color: var(--neutral);
+}
 .secondary{
     color: var(--secondary);
 }
+
+.bg-secondary{
+    background-color: var(--secondary);
+}
 .neutral{
     color: var(--neutral);
+}
+.bg-neutral{
+    background-color: var(--neutral);
 }
 /* color plate end ****************/
 
@@ -27,7 +48,7 @@ body{
 }
 
 .container{
-    max-width: 1170px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
