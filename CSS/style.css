@@ -3,6 +3,7 @@
     --primary: #F15B28;
     --off-primary: #ffb59d;
     --secondary: #272360;
+    --off-secondary: #1a183a;
     /* --neutral: #ffe7df; */
     --neutral: beige;
     --off-black: #3d3d3d;
@@ -24,6 +25,12 @@ body{
 }
 .bg-primary{
     background-color: var(--primary);
+}
+.bg-offprimary{
+    background-color: var(--off-primary);
+}
+.bg-offsecondary{
+    background-color: var(--off-secondary);
 }
 .bg-neutral{
     background-color: var(--neutral);

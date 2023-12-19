@@ -6,3 +6,6 @@ for (var i = 0; i < elements.length; i++) {
     elements[i].src = logo;
 }
 document.getElementsByClassName("logo").alt = company_name;
+
+// var footer = document.getElementById("footer");
+// footer.insertAdjacentElement+='../HTML/footer.html'
