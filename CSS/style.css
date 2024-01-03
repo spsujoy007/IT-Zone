@@ -3,6 +3,7 @@
     --primary: #F15B28;
     --off-primary: #ffb59d;
     --secondary: #272360;
+    --secondary-hover: #363082;
     --off-secondary: #1a183a;
     /* --neutral: #ffe7df; */
     --neutral: beige;
@@ -41,7 +42,12 @@ body{
 
 .bg-secondary{
     background-color: var(--secondary);
+    transition: all 0.3s;
 }
+.secondary-hover:hover{
+    background-color: var(--secondary-hover);
+}
+
 .neutral{
     color: var(--neutral);
 }
