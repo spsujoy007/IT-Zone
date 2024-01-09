@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses</title>
+    <title>Courses - IT-Zone</title>
     <link rel="icon" type="image/x-icon" href="/assets/main-logo.png">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/about.css">
@@ -25,7 +25,7 @@
                 <ul class="flex gap-x-8 secondary text-2xl font-semibold ">
                     <a href="../index.html"><li>Home</li></a>
                     <a href="./pages/"><li>About</li></a>
-                    <a href="#"><li>Courses</li></a>
+                    <a href="./courses.html"><li>Courses</li></a>
                     <a href="./pages/"><li>Blog</li></a>
                 </ul>
                 <button class="button text-3xl">Contact us</button>
@@ -109,61 +109,8 @@
 
         <!-- card section  -->
         <section class="mt-20">
-            <div class="flex gap-x-4">
-                <div class="flex space-x-5 w-1/2 bg-slate-100 min-h-[100px]">
-                    <div class="w-[745px] overflow-x-hidden">
-                        <img class="" src="../assets/course img/pic1.jpg" alt="">
-                    </div>
-                    <div class="py-5">
-                       <div class="">
-                            <p class="bg-offprimary inline px-3 py-1 rounded-full primary font-bold text-sm">Web Dev</p>
-                            <h4 class="text-xl font-bold mt-2">MERN Stack Web Development</h4>
-                            <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti quia eaque. Eligendi soluta dolorum minima, reiciendis commodi deleniti corrupti?</p>
-                       </div>
-
-                        <!-- admin info  -->
-                        <div class="mt-10">
-                            <div class="flex items-center space-x-3">
-                                <img class="w-[40px] h-[40px] rounded-full border_primary " src="../assets/razaunur_ullah.png" alt="">
-                                <div>
-                                    <h3 class="font-bold">Razanur Ullah</h3>
-                                    <p class="text-md">It Instructor</p>
-                                </div>
-                            </div>
-                            <div class="mt-4 flex justify-between border-t-[1px] border-black pt-2 pr-2">
-                                <p class="text-xl">৳ 2000<span class="primary"> BDT</span> </p>
-                                <p class="flex gap-2 items-center"><i class="fa-solid fa-user-check"></i>32</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex space-x-5 w-1/2 bg-slate-100">
-                    <div class="w-[745px] overflow-x-hidden">
-                        <img class="" src="../assets/course img/pic1.jpg" alt="">
-                    </div>
-                    <div class="py-5">
-                       <div class="">
-                            <p class="bg-offprimary inline px-3 py-1 rounded-full primary font-bold text-sm">Web Dev</p>
-                            <h4 class="text-xl font-bold mt-2">MERN Stack Web Development</h4>
-                            <p class="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti quia eaque. Eligendi soluta dolorum minima, reiciendis commodi deleniti corrupti?</p>
-                       </div>
-
-                        <!-- admin info  -->
-                        <div class="mt-10">
-                            <div class="flex items-center space-x-3">
-                                <img class="w-[40px] h-[40px] rounded-full border_primary" src="../assets/razaunur_ullah.png" alt="">
-                                <div>
-                                    <h3 class="font-bold">Razanur Ullah</h3>
-                                    <p class="text-md">It Instructor</p>
-                                </div>
-                            </div>
-                            <div class="mt-4 flex justify-between border-t-[1px] border-black pt-2 pr-2">
-                                <p class="text-xl">৳ 2000<span class="primary"> BDT</span> </p>
-                                <p class="flex gap-2 items-center"><i class="fa-solid fa-user-check "></i>32</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex gap-x-4" id="coursesFather">
+                
                 </div>
             </div>
         </section>
@@ -228,6 +175,7 @@
 
     <!-- font awesome icons  -->
     <script src="https://kit.fontawesome.com/5d73ebcce2.js" crossorigin="anonymous"></script>
-    <script src="./JS/setting.js"></script>
+    <script src="../JS/courses_handle.js"></script>
+    <script src="../JS/setting.js"></script>
 </body>
 </html>
