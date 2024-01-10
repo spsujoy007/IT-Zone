@@ -9,3 +9,7 @@ document.getElementsByClassName("logo").alt = company_name;
 
 // var footer = document.getElementById("footer");
 // footer.insertAdjacentElement+='../HTML/footer.html'
+
+
+
+// if(document.title())

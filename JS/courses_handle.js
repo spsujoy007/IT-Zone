@@ -1,4 +1,5 @@
 let courseDiv = document.getElementById("coursesFather");
+let featuredCourseDiv = document.getElementById("featuredCourses");
 
 // here you can add new course or change course contents;
 const courses =  [
@@ -20,8 +21,28 @@ const courses =  [
     }
 ]
 
-courseDiv.innerHTML = courses.map(cs => `
-        <div class="flex w-[48%] hover:bg-slate-100 min-h-[100px] rounded-lg overflow-hidden border-[1px] border-slate-200  duration-300 hover:shadow-lg hover:shadow-slate-300 cursor-pointer">
+// here you can add new course or change course contents;
+const featuredCourseData =  [
+    {
+        image:"../assets/course_img/pic1.jpg",
+        tag:"Web Dev",
+        title: "MERN Stack Web Development",
+        details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti quia eaque. Eligendi soluta dolorum minima, reiciendis commodi deleniti corrupti?",
+        price: 2000,
+        purchased: 32
+    },
+    {
+        image:"../assets/course_img/pic1.jpg",
+        tag:"Web Dev",
+        title: "Word Press Theme Development",
+        details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti quia eaque. Eligendi soluta dolorum minima, reiciendis commodi deleniti corrupti?",
+        price: 3000,
+        purchased: 44
+    }
+]
+
+courseDiv.innerHTML = courses.map(cs => ` 
+        <div class="flex md:w-[48%] w-[100%] hover:bg-slate-100 min-h-[100px] rounded-lg overflow-hidden border-[1px] border-slate-200  duration-300 hover:shadow-lg hover:shadow-slate-300 cursor-pointer">
         <div class="w-[800px] overflow-hidden p-4 ">
             <img class="rounded-xl" src=${cs.image} alt="">
         </div>
@@ -47,5 +68,34 @@ courseDiv.innerHTML = courses.map(cs => `
                 </div>
             </div>
         </div>
+        </div>`
+).join('');
+
+featuredCourseDiv.innerHTML = featuredCourseData.map(cs => ` 
+        <div class=" w-[300px] hover:bg-slate-100 rounded-lg overflow-hidden border-[1px] border-slate-200  duration-300 hover:shadow-lg hover:shadow-slate-300 cursor-pointer">
+        <div class=" ">
+            <img class="" src=${cs.image} alt="">
         </div>
-`)
+        <div class="p-4">
+            <div class="">
+                    <h4 class="text-md font-bold mt-2">${cs.title}</h4>
+
+            </div>
+
+            <!-- admin info  -->
+            <div class="mt-5">
+                <div class="flex items-center space-x-3">
+                    <img class="w-[40px] h-[40px] rounded-full border_primary " src="../assets/razaunur_ullah.png" alt="">
+                    <div>
+                        <h3 class="font-bold">Razanur Ullah</h3>
+                        <p class="text-md">It Instructor</p>
+                    </div>
+                </div>
+                <div class="mt-2 flex justify-between pt-2 ">
+                    <p class="text-xl">৳ ${cs.price}<span class="primary"> BDT</span> </p>
+                    <p class="flex gap-2 items-center"><i class="fa-solid fa-user-check"></i>${cs.purchased}</p>
+                </div>
+            </div>
+        </div>
+        </div>`
+).join('');
