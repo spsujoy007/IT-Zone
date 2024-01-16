@@ -87,3 +87,25 @@ li:hover{
     cursor: pointer;
     color: var(--primary);
 }
+
+.recomend_icon
+{
+    transition: all 0.4s ease-in-out;
+}
+.recomend_card:hover .recomend_icon
+{
+    animation: recommendIconAnimation 0.4s normal ;
+}
+
+@keyframes recommendIconAnimation {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(15deg);
+        
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

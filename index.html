@@ -6,6 +6,7 @@
     <title>IT-Zone</title>
     <link rel="icon" type="image/x-icon" href="/assets/main-logo.png">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/home.css">
     <link rel="stylesheet" href="./CSS/about.css">
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,17 +19,17 @@
 <body>
         <!-- header start ------->
         <header class="fixed w-full bg-white shadow-sm">
-            <div class="container py-3 flex justify-between items-center smoch-font ">
+            <div class="container py-3 flex justify-between items-center ">
                 <img class="md:w-[200px] w-[150px] logo" src="" alt="">
 
                 <div class="gap-x-14 items-center md:flex hidden">
-                    <ul class="flex gap-x-8 secondary text-2xl font-semibold ">
-                        <a href="./pages/"><li>Home</li></a>
-                        <a href="./pages/"><li>About</li></a>
+                    <ul class="flex gap-x-7 secondary text-md font-semibold uppercase">
+                        <a href="./pages/" class="primary"><li>Home</li></a>
+                        <!-- <a href="./pages/"><li>About</li></a> -->
                         <a href="./pages/courses.html"><li>Courses</li></a>
-                        <a href="./pages/"><li>Blog</li></a>
+                        <a href="./pages/blog.html"><li>Blog</li></a>
                     </ul>
-                    <button class="button text-3xl">Contact us</button>
+                    <button class="button text-xl py-2">Contact us</button>
                 </div>
             </div>
         </header>
@@ -87,9 +88,9 @@
 
                 <div class="mt-8  grid grid-cols-4 gap-4">
                     <!-- single card  -->
-                    <div class="shadow-2xl  py-6 px-3 bg-white  rounded-xl flex items-center gap-4">
+                    <div class="shadow-2xl recomend_card shadow-slate-300 border-[1px] border-white hover:border-red-300 duration-300 hover:shadow-none  py-6 px-3 bg-white  rounded-xl flex items-center gap-4">
                         <!-- <img class="w-[50px] rounded-full border-black border-2 p-1" src="../assets/round.png" alt=""> -->
-                        <div class="w-[80px] text-4xl flex  items-center justify-center primary">
+                        <div class="w-[80px] text-4xl flex recomend_icon items-center justify-center primary">
                             <i class="fa-solid fa-plate-wheat"></i>
                         </div>
                         <div>
@@ -98,8 +99,8 @@
                         </div>
                     </div>
                     <!-- single card  -->
-                    <div class="shadow-2xl py-6 px-3 bg-white  rounded-xl flex items-center gap-4">
-                        <div class="w-[80px]  text-4xl flex  items-center justify-center primary">
+                    <div class="shadow-2xl recomend_card shadow-slate-300 border-[1px] border-white hover:border-red-300 duration-300 hover:shadow-none py-6 px-3 bg-white  rounded-xl flex items-center gap-4">
+                        <div class="w-[80px] text-4xl recomend_icon flex  items-center justify-center primary">
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
                         </div>
                         <div>
@@ -108,8 +109,8 @@
                         </div>
                     </div>
                     <!-- single card  -->
-                    <div class="shadow-2xl py-6 px-3 bg-white  rounded-xl flex items-center gap-4">
-                        <div class="w-[80px] text-4xl flex  items-center justify-center primary">
+                    <div class="shadow-2xl recomend_card shadow-slate-300 border-[1px] border-white hover:border-red-300 duration-300 hover:shadow-none py-6 px-3 bg-white  rounded-xl flex items-center gap-4">
+                        <div class="w-[80px] text-4xl recomend_icon flex  items-center justify-center primary">
                             <i class="fa-solid fa-mug-saucer"></i>
                         </div>
                         <div>
@@ -118,8 +119,8 @@
                         </div>
                     </div>
                     <!-- single card  -->
-                    <div class="shadow-2xl py-6 px-3 bg-white  rounded-xl flex items-center gap-4">
-                        <div class="w-[80px] text-4xl flex  items-center justify-center primary">
+                    <div class="shadow-2xl recomend_card shadow-slate-300 border-[1px] border-white hover:border-red-300 duration-300 hover:shadow-none py-6 px-3 bg-white  rounded-xl flex items-center gap-4">
+                        <div class="w-[80px] text-4xl recomend_icon flex  items-center justify-center primary">
                             <i class="fa-solid fa-hand-point-up"></i>
                         </div>
                         <div>
